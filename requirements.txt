@@ -3,3 +3,8 @@ mozilla-sphinx-theme
 # Disabled because they don't seem to build properly on RTD
 # sphinxcontrib-spelling==2.1
 # pyenchant
+
+# sphinxcontrib-seqdiag imports pkg_resources, which setuptools 81 dropped.
+# Read the Docs upgrades setuptools to latest before it installs this file,
+# so pinning here downgrades it back and keeps the build working.
+setuptools<81
