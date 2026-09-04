@@ -49,3 +49,18 @@ a.deprecation-banner-link:focus {
     color: #fff;
     text-decoration: underline;
 }
+
+/* The theme sets "a { text-decoration: none }" and its :hover rule is broken by
+   a missing semicolon, so inline links are hard to spot as links. Underline the
+   ones in page copy; leave toctrees and headerlinks alone. */
+div.body p a,
+div.body li a,
+div.body dd a,
+div.body td a {
+    text-decoration: underline;
+}
+
+div.body div.toctree-wrapper li a,
+div.body a.headerlink {
+    text-decoration: none;
+}
