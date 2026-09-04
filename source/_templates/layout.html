@@ -1,0 +1,18 @@
+{% extends "!layout.html" %}
+
+{# Archive notice, shown at the top of every page. The old plain-text
+   "DEPRECATION NOTE" section read like page copy and was easy to skim past. #}
+{%- block document %}
+  <div class="deprecation-banner">
+    <p class="deprecation-banner-title">Archived: these docs are not maintained</p>
+    <p class="deprecation-banner-text">
+      Sync and Tokenserver docs and code now live in the syncstorage-rs project.
+      Anything here may be out of date or wrong.
+    </p>
+    <p class="deprecation-banner-links">
+      <a class="deprecation-banner-link" href="https://mozilla-services.github.io/syncstorage-rs/">Read the current docs</a>
+      <a class="deprecation-banner-link" href="https://github.com/mozilla-services/syncstorage-rs">Go to the syncstorage-rs repo</a>
+    </p>
+  </div>
+{{ super() }}
+{%- endblock %}

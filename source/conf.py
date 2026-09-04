@@ -35,7 +35,8 @@ exclude_patterns = []
 pygments_style = 'sphinx'
 
 html_title = "Mozilla Services"
-html_static_path = []
+html_static_path = ['_static']
+html_css_files = ['deprecation-banner.css']
 
 CURDIR = os.path.dirname(__file__)
 sidebars = []

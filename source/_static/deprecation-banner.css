@@ -1,0 +1,51 @@
+/* Archive banner, injected on every page by _templates/layout.html. */
+
+div.deprecation-banner {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px 24px 18px 24px;
+    background-color: #d70022;
+    border-bottom: 4px solid #8f0016;
+    color: #fff;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+div.deprecation-banner p {
+    margin: 0 0 8px 0;
+    color: #fff;
+}
+
+div.deprecation-banner p:last-child {
+    margin-bottom: 0;
+}
+
+p.deprecation-banner-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+a.deprecation-banner-link {
+    display: inline-block;
+    margin: 6px 12px 0 0;
+    padding: 8px 14px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #8f0016;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+a.deprecation-banner-link:hover,
+a.deprecation-banner-link:focus {
+    background-color: #8f0016;
+    border-color: #fff;
+    color: #fff;
+    text-decoration: underline;
+}
