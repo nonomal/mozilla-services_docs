@@ -4,13 +4,6 @@
 Run your own Sync-1.5 Server
 ============================
 
-
-DEPRECATION NOTE
-==============================
-This repo has been archived and the documentation is no longer maintained.
-Sync and Tokenserver docs and code are in the `syncstorage-rs` GitHub repo.
-You can find the repo for this service `here <https://github.com/mozilla-services/syncstorage-rs>`_ and the maintained documentation `here <https://mozilla-services.github.io/syncstorage-rs/>`_.
-
 Mozilla does not provide any pre-packaged release of the Firefox Sync server.
 
 The easiest way to install a Sync Server is to checkout our repository
